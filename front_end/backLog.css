@@ -1,0 +1,78 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: url('./image/Untitled\ design.png') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      width: 450px; /* Increased */
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(18px);
+      padding: 40px; /* Increased */
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    }
+
+     .form {
+      display: none;
+      flex-direction: column;
+    }
+
+    .form.active {
+      display: flex;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #222;
+      font-size: 32px; /* Increased */
+    }
+
+    input {
+      padding: 14px; /* Increased */
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      font-size: 16px; /* Increased */
+    }
+
+    button {
+      padding: 14px; /* Increased */
+      margin-top: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #010100;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 18px; /* Increased */
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #b1b855;
+    }
+
+    .toggle {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 16px; /* Increased */
+    }
+
+    .toggle span {
+      color: #323d7d;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }

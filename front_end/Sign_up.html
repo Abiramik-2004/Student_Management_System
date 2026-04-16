@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="./backLog.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Login Form -->
+    <div class="form active" id="loginForm">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button>Login</button>
+      <div class="toggle">
+        Don't have an account? <span onclick="showSignup()">Sign Up</span>
+      </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form" id="signupForm">
+      <h2>Sign Up</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button>Create Account</button>
+      <div class="toggle">
+        Already have an account? <span onclick="showLogin()">Login</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function showSignup() {
+      document.getElementById('loginForm').classList.remove('active');
+      document.getElementById('signupForm').classList.add('active');
+    }
+
+    function showLogin() {
+      document.getElementById('signupForm').classList.remove('active');
+      document.getElementById('loginForm').classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
