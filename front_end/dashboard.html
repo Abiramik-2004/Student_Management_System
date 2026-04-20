@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+  <h2>🎓 SMS</h2>
+  <ul>
+    <li class="active"><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="Student.html">Students</a></li>
+    <li><a href="Courses.html">Courses</a></li>
+    <li><a href="Attendance.html">Attendance</a></li>
+    <li><a href="Result.html">Results</a></li>
+    <li><a href="Settings.html">Settings</a></li>
+  </ul>
+</div>
+    
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <h1>Dashboard</h1>
+      <input type="text" placeholder="Search...">
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+
+      <div class="card yellow">
+        <h3>Total Students</h3>
+        <p>120</p>
+      </div>
+
+      <div class="card gradient1">
+        <h3>Courses</h3>
+        <p>8</p>
+      </div>
+
+      <div class="card gradient2">
+        <h3>Attendance</h3>
+        <p>92%</p>
+      </div>
+
+      <div class="card gradient3">
+        <h3>Notifications</h3>
+        <p>5 New</p>
+      </div>
+
+    </div>
+
+    <!-- Table -->
+    <div class="table-section">
+      <h2>Recent Students</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Abirami</td>
+          <td>AI</td>
+          <td class="active-status">Active</td>
+        </tr>
+        <tr>
+          <td>Rahul</td>
+          <td>Web Dev</td>
+          <td class="inactive-status">Inactive</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
