@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./layout.css">
+  <title>Attendance</title>
+  <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    <div class="main">
-  <h1>Attendance</h1>
 
-  <div class="card">
-    <h3>Mark Attendance</h3>
+<div class="container">
+  <div class="sidebar">
+    <h2>🎓 SMS</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="Student.html">Students</a></li>
+      <li><a href="Courses.html">Courses</a></li>
+      <li class="active"><a href="Attendance.html">Attendance</a></li>
+      <li><a href="Result.html">Results</a></li>
+      <li><a href="Settings.html">Settings</a></li>
+    </ul>
+  </div>
 
-    <table>
-      <tr><th>Name</th><th>Status</th></tr>
-      <tr>
-        <td>Abirami</td>
-        <td>
-          <select>
-            <option>Present</option>
-            <option>Absent</option>
-          </select>
-        </td>
-      </tr>
-    </table>
+  <div class="main">
+    <h1>Attendance</h1>
 
-    <button>Save</button>
+    <div class="card">
+      <table>
+        <tr><th>Name</th><th>Status</th></tr>
+        <tr>
+          <td>Abirami</td>
+          <td>
+            <select>
+              <option>Present</option>
+              <option>Absent</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <button>Save</button>
+    </div>
   </div>
 </div>
+
 </body>
 </html>

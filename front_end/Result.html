@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Settings</title>
+  <title>Results</title>
   <link rel="stylesheet" href="layout.css">
 </head>
 <body>
@@ -9,31 +9,30 @@
 <div class="container">
   <div class="sidebar">
     <h2>🎓 SMS</h2>
-    <ul>
+   <ul>
       <li><a href="dashboard.html">Dashboard</a></li>
       <li><a href="Student.html">Students</a></li>
       <li><a href="Courses.html">Courses</a></li>
       <li><a href="Attendance.html">Attendance</a></li>
-      <li><a href="Result.html">Results</a></li>
-      <li  class="active"><a href="Settings.html">Settings</a></li>
+      <li class="active"><a href="Result.html">Results</a></li>
+      <li><a href="Settings.html">Settings</a></li>
     </ul>
   </div>
 
   <div class="main">
-    <h1>Settings</h1>
+    <h1>Results</h1>
 
     <div class="card">
-      <h3>Profile</h3>
-      <input placeholder="Name">
-      <input placeholder="Email">
-      <button>Update</button>
+      <input placeholder="Student Name">
+      <input placeholder="Marks">
+      <button>Add</button>
     </div>
 
     <div class="card">
-      <h3>Password</h3>
-      <input placeholder="Old Password">
-      <input placeholder="New Password">
-      <button>Change</button>
+      <table>
+        <tr><th>Name</th><th>Marks</th></tr>
+        <tr><td>Abirami</td><td>95</td></tr>
+      </table>
     </div>
   </div>
 </div>

@@ -8,6 +8,7 @@ body {
   display: flex;
 }
 
+/* Sidebar */
 .sidebar {
   width: 220px;
   height: 100vh;
@@ -29,66 +30,54 @@ body {
   padding: 12px;
   margin: 10px 0;
   border-radius: 10px;
-  cursor: pointer;
 }
 
-.sidebar ul li:hover {
+.sidebar ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
   background: #fff3cd;
+  color: #f4b400;
 }
 
+/* Main */
 .main {
   flex: 1;
   padding: 30px;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-}
-/* Topbar */
 .topbar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .topbar input {
-  padding: 10px 15px;
+  padding: 10px;
   border-radius: 20px;
   border: none;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Grid Layout */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-}
-
-/* Cards Enhancement */
+/* Cards */
 .card {
   background: white;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-  transition: 0.3s;
+  margin-bottom: 20px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* Form Styling */
-.form-card input {
+/* Inputs & Buttons */
+input, select {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   margin: 10px 0;
   border-radius: 10px;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
 }
 
 button {
@@ -98,8 +87,6 @@ button {
   background: #f4b400;
   color: white;
   cursor: pointer;
-  margin-top: 10px;
-  transition: 0.3s;
 }
 
 button:hover {
@@ -110,23 +97,13 @@ button:hover {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
 }
 
 table th, table td {
   padding: 12px;
-  text-align: left;
-}
-
-table tr {
   border-bottom: 1px solid #eee;
 }
 
 /* Action Buttons */
-.edit {
-  background: #4caf50;
-}
-
-.delete {
-  background: #f44336;
-}
+.edit { background: #4caf50; }
+.delete { background: #f44336; }

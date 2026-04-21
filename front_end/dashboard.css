@@ -25,21 +25,24 @@ body {
 
 .sidebar h2 {
   color: #f4b400;
-  margin-bottom: 20px;
 }
 
 .sidebar ul {
   list-style: none;
+  padding: 0;
 }
 
 .sidebar ul li {
   padding: 12px;
   margin: 10px 0;
   border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
+.sidebar ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 .sidebar ul li:hover,
 .sidebar ul li.active {
   background: #fff3cd;
